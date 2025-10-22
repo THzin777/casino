@@ -6,42 +6,59 @@
     android:layout_height="match_parent"
     android:background="@drawable/fundo_cassino">
 
+
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="220dp"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
+        android:textColorHint="#FFD700"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFD700"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <EditText
         android:id="@+id/editSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textColorHint="#FFD700"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFD700"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editEmail" />
+
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="60dp"
         android:text="Entrar"
-        android:textColorLink="#B37272"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:elevation="6dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editSenha" />
+        app:layout_constraintTop_toBottomOf="@id/editSenha"
+        android:animation="@anim/pulse_anim" />
+
 
     <Button
         android:id="@+id/btnIrCadastro"
@@ -49,8 +66,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Cadastrar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFD700"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
